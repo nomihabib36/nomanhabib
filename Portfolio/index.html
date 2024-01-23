@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./utilities/utilities.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <header class="flex items-center column between">
+        <!-- navbar -->
+        <nav>
+          <div class="navbar flex">
+            <div class="logo">
+              <a href="#"> <img src="./assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="menu">
+              <ul class="flex" id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+            <div class="contact-btn btn">
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <!-- profile -->
+        <section class="flex profile-container">
+          <div class="profile">
+            <img src="./assets/images/trans.png" alt="" />
+            <div class="div"></div>
+          </div>
+          <div class="profile-txt">
+            <h1>Web Developer</h1>
+            <h2>Hi, I'm <span>Noman</span> Habib From Pakistan</h2>
+          </div>
+        </section>
+      </header>
+      <!-- About -->
+
+      <section id="about">
+        <div class="container">
+          <div class="about-row flex between">
+            <div class="about-col-1">
+              <img src="./assets/images/trans.png" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veritatis iure officia maxime nostrum exercitationem libero
+                consectetur maiores reiciendis temporibus odio, quos soluta
+                corrupti illo amet quo, corporis reprehenderit nam eligendi
+                provident deserunt magnam rem?
+              </p>
+
+              <div class="tab-title flex">
+                <p class="tab-link active-links" onclick="opentab('Skills')">
+                  Skills
+                </p>
+                <p class="tab-link" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-link" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                  <li>
+                    <span>UI/UX</span>
+                    <p>Designing Web/App interface</p>
+                  </li>
+                  <li>
+                    <span>Web Development</span>
+                    <p>Web App Development</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2023 - Current</span>
+                    <p>Web Development Training at BanoQabil 2.0</p>
+                  </li>
+                  <li>
+                    <span>2021 - 2022</span>
+                    <p>Internship at Brandoers</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2023 - Current</span>
+                    <p>Web Development Training at BanoQabil 2.0</p>
+                  </li>
+                  <li>
+                    <span>2021 - 2022</span>
+                    <p>Internship at Brandoers</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------services---------------- -->
+      <section id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <img src="./assets/images/webdev.svg" alt="" />
+              <h2>Web Design</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                rerum nemo asperiores veniam debitis voluptatum aut esse quaerat
+                laborum, minima illo, atque delectus! Quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <img src="./assets/images/ui.svg" alt="" />
+              <i></i>
+              <h2>UI/UX</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                rerum nemo asperiores veniam debitis voluptatum aut esse quaerat
+                laborum, minima illo, atque delectus! Quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <img
+                src="./assets/images/appdev.svg"
+                style="filter: invert(0)"
+                alt=""
+              />
+              <h2>App Design</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                rerum nemo asperiores veniam debitis voluptatum aut esse quaerat
+                laborum, minima illo, atque delectus! Quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------My Work------------------------------------- -->
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./assets/images/work-1.png" alt="" />
+              <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  recusandae explicabo eius repellat incidunt beatae!
+                </p>
+                <a href="#" class="flex items-center center"
+                  ><img src="./assets/images/share.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assets/images/work-2.png" alt="" />
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  recusandae explicabo eius repellat incidunt beatae!
+                </p>
+                <a href="#" class="flex items-center center"
+                  ><img src="./assets/images/share.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assets/images/work-3.png" alt="" />
+              <div class="layer">
+                <h3>Web App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  recusandae explicabo eius repellat incidunt beatae!
+                </p>
+                <a href="#" class="flex items-center center"
+                  ><img src="./assets/images/share.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="new-btn">See More</a>
+      </section>
+      <!-- --------------------------------------------contact-------------------------------- -->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>Nomihabib36@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>0308 9506320</p>
+              <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="cv-btn">
+            <a href="" download class="new-btn btn-2">Download CV</a>
+        </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="Message" name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button class="new-btn btn-2" type="submit">Submit</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyright">
+        <p>
+            Copyright &copy; 2024 Noman Habib. All rights reserved.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-link");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-links");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-180px";
+        }
+
+    </script>
+  </body>
+</html>
